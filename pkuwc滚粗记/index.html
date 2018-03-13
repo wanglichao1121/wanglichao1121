@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+        <link rel="dns-prefetch" href="https://cdn-city.livere.com"/>
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            pkuwc滚粗记 | 
+        
+        wlc&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",游记">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?A9KDO5qs5LuLeGJGQsLtzg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+        
+            <link rel="stylesheet" href="/css/fontawesome.min.css">
+        
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #66CCFF;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after{
+    background-color: #9999FF !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #9999FF !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #66CCFF;
+    text-decoration: underline;
+  }
+
+</style>
+
+<style>
+  body{
+    background-image: url(/img/bg.jpg);
+  }
+</style>
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="wlc&#39;s blog">
+    <meta name="msapplication-starturl" content="https://wanglichao1121.coding.me/pkuwc滚粗记/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="wlc&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://wanglichao1121.coding.me/pkuwc滚粗记/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="pkuwc滚粗记 | wlc&#39;s blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="游记"> 
+
+    
+        <meta property="article:published_time" content="Fri Feb 23 2018 09:02:53 GMT+0800">
+        <meta property="article:modified_time" content="Sat Feb 24 2018 07:20:59 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://wanglichao1121.coding.me/pkuwc滚粗记/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://wanglichao1121.coding.me/pkuwc滚粗记/index.html",
+    "headline": "pkuwc滚粗记",
+    "datePublished": "Fri Feb 23 2018 09:02:53 GMT+0800",
+    "dateModified": "Sat Feb 24 2018 07:20:59 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "wanglichao1121",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "NOIP2017光荣退役,（辣鸡出题人毁我人生）"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "wlc&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",游记",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+
+</head>
+
+    
+        <body id="scheme-Isolation" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                <!-- Isolation Header -->
+                <header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright">
+            <div class="header-site">
+                ©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;wlc's blog
+            </div>
+            <div class="my_middle">
+                Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+                <br>
+                Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a>
+            </div>
+        </div>
+
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="/" title="wlc&#39;s blog">
+                wlc&#39;s blog
+            </a>
+        </span>
+
+        <p class="header-slogan header-item">
+        
+            
+                NOIP2017光荣退役<br>（辣鸡出题人毁我人生）
+            
+        
+        </p>
+
+        <ul class="header-item header-nav" style="padding-left: 10px;list-style: none; color: #EEEEEE">
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons" style="color: #EEEEEE" >home</i>
+                
+            </a>
+        </li>
+        
+    
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons sidebar-material-icons" style="margin-right: 5px;color: #EEEEEE">library_books</i>
+                <b class="caret" style="color: #EEEEEE" ></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/bzoj/">bzoj</a></li><li><a class="sidebar_archives-link" href="/categories/codechef/">codechef</a></li><li><a class="sidebar_archives-link" href="/categories/codeforces/">codeforces</a></li><li><a class="sidebar_archives-link" href="/categories/codeplus/">codeplus</a></li><li><a class="sidebar_archives-link" href="/categories/csacademy/">csacademy</a></li><li><a class="sidebar_archives-link" href="/categories/nowcoder/">nowcoder</a></li><li><a class="sidebar_archives-link" href="/categories/ubuntu/">ubuntu</a></li><li><a class="sidebar_archives-link" href="/categories/uoj/">uoj</a></li><li><a class="sidebar_archives-link" href="/categories/uoj/codeforces/">codeforces</a></li><li><a class="sidebar_archives-link" href="/categories/博客/">博客</a></li><li><a class="sidebar_archives-link" href="/categories/总结/">总结</a></li><li><a class="sidebar_archives-link" href="/categories/杂题/">杂题</a></li><li><a class="sidebar_archives-link" href="/categories/游记/">游记</a></li><li><a class="sidebar_archives-link" href="/categories/省选/">省选</a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/links" title="Links">
+                
+                    <i class="material-icons sidebar-material-icons" style="color: #EEEEEE">link</i>
+                
+                <!-- i -->
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Header SNS -->
+		<div class="header-item header-sns_list">
+			<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/wanglichao1121" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/wang-li-chao-22-30/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/23045729/#/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+		</div>
+    </div>
+</header>
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+                    <!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container my_trans">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+
+
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
+    
+        <!-- Post Header Info -->
+        <div class="post-header_info without-thumbnail">
+            <!-- Author Avatar & Name -->
+            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="wanglichao1121's avatar">
+            <span class="name-span">wanglichao1121</span>
+        </div>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
+    
+        </div>
+
+
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+
+    
+        <div class="post-content_wrapper">
+            <p class="post-title">
+                pkuwc滚粗记
+            </p>
+            <h1 id="D0"><a href="#D0" class="headerlink" title="D0"></a>D0</h1><p>刚从宁波出发的时候车是倒着开的（椅背方向）。。<br>到了杭州不但变成顺向开了，连车次都变了<br>我脸黑的一匹<del>为滚粗埋下伏笔</del>明明一起买的票结果和所有人都不是<strong>一车</strong>，一大群人在10车，我在11车<br>跟我同一排有一个老妈妈，感觉像是头一次坐高铁，一上来就说手机快没电了，一遍一遍问我怎么充电<del>你看我像是有手机的人吗</del><br>后来来了一个超耐心的小姐姐坐她旁边她才换了个人问<br>话说那个小姐姐是怎么做到高铁上用电脑po一个看起来很高端的像是网游的东西还和朋友开黑的<br>旁边还有个老大爷（应该也是一个人坐车），话不多但是一看就贼亲切，手机屏保是个贼可爱的小孩，目测他孙子<br>出浙江之前一直看到雪，然而出了浙江看不到雪却<del>陷在雪里</del>（梁大的bb）<br>由于天气等乱七八糟的原因，在鹰潭活活困了5h+<br>期间碎觉碎到怀疑人生后开始po隔膜<br>啊~还好我机智地带上了i wanna，我开始不存档po，po到30多的时候发现要没电了就收起来了（旁边一个小哥哥一直占着充电插座啊怎么办，离线等，不强在）<br>到长沙前还<strong>临时停车</strong>了几次，浑身难受<br>等到了宾馆已经11:00+了</p>
+<h1 id="D1"><a href="#D1" class="headerlink" title="D1"></a>D1</h1><p>第一件事：碎觉<br>大概00:30开始睡的，6:00左右就被叫醒了，导致一整天都意识模糊<br>早饭吃的一家店招牌写着</p>
+<blockquote>
+<p>刀  <strong>凉 凉</strong><br>削<br>面  粉   面</p>
+</blockquote>
+<p>明白了，我收拾一下就滚(ノ｀Д)ノ<br>早上听了莫名其妙的<em>计算与智能</em>，感觉这些历史好强啊但是有什么卵用啊，<del>还不如从计算机架构方面讲一讲怎么底层优化</del><br>话题也莫名其妙的一直围绕着<em>女生是否适合信息</em><br>意识模糊的考完数学<br>考数学的时候竟然被隔壁小哥认出来了，问我是不是有个cnblogs的博客<del>然而断更这么久了，好羞耻</del><br>考数学竟然是上机的，用的还是OJ！<br>虽然形式是</p>
+<pre><code>#include...
+int main()
+{
+    char a=&#39;A&#39;,A=&#39;A&#39;,
+         b=&#39;B&#39;,B=&#39;B&#39;,
+         .....
+    cout &lt;&lt;
+    //在这里补全你的代码
+    &lt;&lt; endl;
+}
+</code></pre><p>大吃一惊！<br>还有这种操作<br>开始做题：<br>1.好sb啊<br>2.好sb啊<br>3.好sb啊，要不我写个程序验证一下？<br>……<br>woc这啥玩意儿啊<br>woc怎么还有复数啊，还好知道一点点<br>woc立体几何，被我停课停掉了啊<br>woc还有立体几何<br>woc有毒吧全是立体几何<br>woc我写程序也算不来啊<br>woc还要选以上都错<br>woc还有证明题？？？<br>打不过打不过<br>中午一躺下差不多就睡着了<br>结果下午继续意识模糊<br>刚开考想先打个fft，刚要按下退格的时候感受到了恐惧<br>这怕是个假键盘哦！整个键完全松掉，按键如同跷跷板，我敲了好几次才敲出一个退格<br>一脸绝望，要求换键盘，居然同意了<br>A啥玩意儿啊？貌似是个链上按比例加，询问链上权值积？<br>完全不可做啊，骗50跑<br>B啥玩意儿啊？<script type="math/tex">n^3</script>不是随便写写吗？<br><del>骗60跑</del><br>woc只有30？<br>啥玩意儿？这年头250都能卡<script type="math/tex">n^3</script>的常了？<br>那我把组合数预处理一下？啥玩意儿还是30？<br>那我数组滚动一下能减少内存初始化的时间？<br>啥玩意儿咋只剩10分了，重交一发30算了<br>有毒吧，来看C题（一看标题 斗地主）<br>算了算了凉了凉了，看看榜<br>C没人做啊，罗大怎么ak啦，胡假齐呢，ckr呢<br>那我要不看看C有没有什么10分20分是可写的？（点进去看到表格）<br>算了算了凉了凉了，回头调常数去<br><del>无限瞎b改常数中</del><br>突然拍案而起！A不是个sb启发式合并吗！<br>一看表还有30min<br>开始估算：<br>1.敲一个splay理想估计10min<br>2.敲一个启发式合并可能用不了几min？<br>3.调试呢？有暴力应该10min差不多了吧？<br>写啊！<br>实际效果：<br>15min：感觉时间不够啊，刚码完主体代码<br>25min：样例咋过啊<br>29min：细节好多啊，写个bb啊<br>29min50s：好饿啊还是滚粗吧（刷新）比赛居然结束了吗<br>出来听说罗大A题写的是一个log的线段树合并，果然我想的再多也打不过罗大啊<br>胡假齐最后几分钟A了B题，成功达到正常分数<br>我只能爆80被初三大佬吊打，果然是夕阳红选手的正常实力<br><del>第一天三道数数题，第二天总得来点别的了吧</del><br>晚上一脸懵逼地背了sa板子</p>
+<h1 id="D2"><a href="#D2" class="headerlink" title="D2"></a>D2</h1><p>突然发现宾馆前面的路叫清真寺巷<br>抬头一看还真有个清真寺<br><del>安拉胡阿克巴！！</del><br>开考前本来想再换一下键盘（昨天一换就是一块全新的），想想算了<br>事实证明这块键盘还是很棒的，敲下去一点感觉都没有<del>飚代码手感胜似漂移</del><br>开题啦！<br>A数数题<br>B数数题<br>C数数题<br><del>脸上笑嘻嘻</del><br>感觉B像个数学题，我大力推了一波式子，结果发现得到了一个显然的东西，放弃希望回头刷榜<br>A被a穿了！<del>罗大大力歪榜，先A了B题</del><br><del>我怎么还没吸取我第一个开的题肯定最难的经验啊</del><br>仔细想了一下，花了2h把Aa掉了<br>又花1h拿了B的30分<br>这时候已经有半个世界130了<br>还行吧，至少比D1被半个世界艹爆好<br>接下来疯狂优化B题只有两种猎人的那个dp，感觉没什么废状态，就开始胡思乱想一些什么等差数列求积的高科技<br>还有1h的时候突然想到C的高斯消元对于每个不同的目标状态是独立的<br>然后自己<del>重新发明</del>了树上线性高斯消元<br>感觉蛮可写的<br>然而花式跑不过样例我也毫无办法<br>感觉每次考试到了最后1h我都神志不清，啥都码不出来了<br>最后130草草收场<br>吃饭的时候已经感受到天寒地冻了<br>数学大题没做完，D1被半个世界艹爆，D2大众分，能面试就有鬼了<br>结果真的有鬼<br>面试就是各种bb，各种胡言乱语，各种“呃——”、“啊？”，吃枣药丸<br>总共三场，一场相当于啥都没说，一场居然扯了半天体育方面的兴趣，一场跟填表格一样严谨<br>算了就这样吧，终于凉透了<br>回宾馆各种颓皇室<del>2v2带8建筑真刺激</del><br><del>亡灵大军等级高就是好，对面一个箭雨解不掉</del></p>
+<h1 id="D3"><a href="#D3" class="headerlink" title="D3"></a>D3</h1><p>闭幕式学生代表发言也提到了998244353，还讲了题<br><del>谁说oier只会修电脑的，oier带个电字的都会修，什么电瓶车啊电风扇啊电线啊电子啊</del><br>讲斗地主的时候气氛一度很尴尬<br><del>其实这道题真的是出题的新高度：他能做到让所有选手默契地都不在上面花时间从而达到公平</del><br>听说有个dalao考场上硬刚斗地主结果少考虑了农民有炸弹地主也能春天，农民有火箭地主该春天还得春天<br>求心理阴影面积<br>听他一讲似乎思路还蛮简单的，复杂度也是有理有据的<br><del>如果是oi赛制说不定还真有人做出来了</del><br>下去合了个影又上来签约<br><del>应该是怕有些人听了约就跑了</del><br>感觉报了一万年才到我，事后发现人手一约（sc入场券？）<br>一开始以为是张废纸，差点撕了!!!∑(ﾟДﾟノ)ノ<br>听lbc解释了一波<br>原来d类也是省队<br>诶那还行啊，noi前100一本吗<br>那还是签吧<br>（从吃饭的地方回学校发现老师已经走了）<br>那就到时候邮寄过去吧<br>下午去玩了橘子洲<del>忘了带橘子了</del><br>hz那边也有消息了，好像是张真废纸<br>hz好像还签了<del>跟pku多大仇</del><br>晚上又颓皇室<del>8法术真有意思</del></p>
+<p>D4滚回家</p>
+
+            
+        </div>
+    
+</div>
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    <span id="/pkuwc滚粗记/" class="leancloud-views_num" data-flag-title="pkuwc滚粗记">
+     &nbsp;浏览量
+</span>
+
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    <div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjk0My85NTA0">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/uoj/uoj30/" id="post_nav-newer" class="prev-content" style="color: white">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/nowcoder/74F/" id="post_nav-older" class="next-content" style="color: white">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>
+    AV.initialize('tRalp8ymC7dJ4uwbiYqtftYQ-gzGzoHsz', 'RxvimXMu1x19EMqnMwQcH8HQ');
+</script>
+<script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    menuSettings: {
+      zoom: "None"
+    },
+    showMathMenu: false,
+    jax: ["input/TeX","output/CommonHTML"],
+    extensions: ["tex2jax.js"],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [["\\(", "\\)"]],
+      displayMath: [["\\[", "\\]"]]
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script>
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+        </body>
+    
+</html>

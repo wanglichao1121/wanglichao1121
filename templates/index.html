@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+        <link rel="dns-prefetch" href="https://cdn-city.livere.com"/>
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            各种板子 | 
+        
+        wlc&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",字符串,线性基,多项式">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?A9KDO5qs5LuLeGJGQsLtzg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+        
+            <link rel="stylesheet" href="/css/fontawesome.min.css">
+        
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #66CCFF;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after{
+    background-color: #9999FF !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #9999FF !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #66CCFF;
+    text-decoration: underline;
+  }
+
+</style>
+
+<style>
+  body{
+    background-image: url(/img/bg.jpg);
+  }
+</style>
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="wlc&#39;s blog">
+    <meta name="msapplication-starturl" content="https://wanglichao1121.coding.me/templates/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="wlc&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://wanglichao1121.coding.me/templates/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="各种板子 | wlc&#39;s blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="字符串"> <meta property="og:article:tag" content="线性基"> <meta property="og:article:tag" content="多项式"> 
+
+    
+        <meta property="article:published_time" content="Thu Jan 18 2018 07:46:16 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 07 2018 08:00:56 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://wanglichao1121.coding.me/templates/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://wanglichao1121.coding.me/templates/index.html",
+    "headline": "各种板子",
+    "datePublished": "Thu Jan 18 2018 07:46:16 GMT+0800",
+    "dateModified": "Wed Mar 07 2018 08:00:56 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "wanglichao1121",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "NOIP2017光荣退役,（辣鸡出题人毁我人生）"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "wlc&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",字符串,线性基,多项式",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+
+</head>
+
+    
+        <body id="scheme-Isolation" class="lazy">
+            <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                <!-- Isolation Header -->
+                <header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright">
+            <div class="header-site">
+                ©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;wlc's blog
+            </div>
+            <div class="my_middle">
+                Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+                <br>
+                Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a>
+            </div>
+        </div>
+
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="/" title="wlc&#39;s blog">
+                wlc&#39;s blog
+            </a>
+        </span>
+
+        <p class="header-slogan header-item">
+        
+            
+                NOIP2017光荣退役<br>（辣鸡出题人毁我人生）
+            
+        
+        </p>
+
+        <ul class="header-item header-nav" style="padding-left: 10px;list-style: none; color: #EEEEEE">
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons" style="color: #EEEEEE" >home</i>
+                
+            </a>
+        </li>
+        
+    
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons sidebar-material-icons" style="margin-right: 5px;color: #EEEEEE">library_books</i>
+                <b class="caret" style="color: #EEEEEE" ></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/bzoj/">bzoj</a></li><li><a class="sidebar_archives-link" href="/categories/codechef/">codechef</a></li><li><a class="sidebar_archives-link" href="/categories/codeforces/">codeforces</a></li><li><a class="sidebar_archives-link" href="/categories/codeplus/">codeplus</a></li><li><a class="sidebar_archives-link" href="/categories/csacademy/">csacademy</a></li><li><a class="sidebar_archives-link" href="/categories/nowcoder/">nowcoder</a></li><li><a class="sidebar_archives-link" href="/categories/ubuntu/">ubuntu</a></li><li><a class="sidebar_archives-link" href="/categories/uoj/">uoj</a></li><li><a class="sidebar_archives-link" href="/categories/uoj/codeforces/">codeforces</a></li><li><a class="sidebar_archives-link" href="/categories/博客/">博客</a></li><li><a class="sidebar_archives-link" href="/categories/总结/">总结</a></li><li><a class="sidebar_archives-link" href="/categories/杂题/">杂题</a></li><li><a class="sidebar_archives-link" href="/categories/游记/">游记</a></li><li><a class="sidebar_archives-link" href="/categories/省选/">省选</a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/links" title="Links">
+                
+                    <i class="material-icons sidebar-material-icons" style="color: #EEEEEE">link</i>
+                
+                <!-- i -->
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Header SNS -->
+		<div class="header-item header-sns_list">
+			<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/wanglichao1121" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/wang-li-chao-22-30/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/23045729/#/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+		</div>
+    </div>
+</header>
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+                    <!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container my_trans">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+
+
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
+    
+        <!-- Post Header Info -->
+        <div class="post-header_info without-thumbnail">
+            <!-- Author Avatar & Name -->
+            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="wanglichao1121's avatar">
+            <span class="name-span">wanglichao1121</span>
+        </div>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
+    
+        </div>
+
+
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+
+    
+        <div class="post-content_wrapper">
+            <p class="post-title">
+                各种板子
+            </p>
+            <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><h3 id="SA"><a href="#SA" class="headerlink" title="SA"></a>SA</h3><p>人生第一次手打sa。。。<br>说来丢人以前都是拉板子<br>果然手写出来的比板子丑多了<br>神奇的点：</p>
+<ol>
+<li>输入相当于初始rk，用rk求下一层sa，用sa去重求同一层rk</li>
+<li>uoj的数据需要特判len=1</li>
+<li>abcaba这组数据还行（仅针对我这种手残选手）</li>
+<li>求height的时候相当于把所有i都变成rk[i]，i-1变成rk[i-1]就有优美的性质了</li>
+</ol>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+#define MAX max(26,n)
+using namespace std;
+char ch;
+int n,a[400001],px[400001],rk[400001],tem[400001],sa[400001],hei[400001];
+int main()
+{
+    for(ch=getchar();isalpha(ch);ch=getchar())
+        a[++n]=ch-&#39;a&#39;+1;
+    for(int i=1;i&lt;=n;i++)
+        rk[i]=a[i];
+    sa[1]=1;
+    for(int le=1;le&lt;n;le&lt;&lt;=1)
+    {
+        for(int i=0;i&lt;=MAX;i++)
+            px[i]=0;
+        for(int i=1;i&lt;=n-le;i++)
+            px[rk[i+le]]++;
+        for(int i=MAX;i;i--)
+            px[i-1]+=px[i];
+        for(int i=1;i&lt;=n-le;i++)
+            tem[px[rk[i+le]]--]=i;
+        for(int i=0;i&lt;=MAX;i++)
+            px[i]=0;
+        for(int i=1;i&lt;=n;i++)
+            px[rk[i]]++;
+        for(int i=0;i&lt;MAX;i++)
+            px[i+1]+=px[i];
+        for(int i=1;i&lt;=n-le;i++)
+            sa[px[rk[tem[i]]]--]=tem[i];
+        for(int i=n-le+1;i&lt;=n;i++)
+            sa[px[rk[i]]--]=i;
+        int Rk=1;
+        for(int i=1;i&lt;n;i++)
+        {
+            tem[sa[i]]=Rk;
+            if(!(sa[i]&lt;=n-le &amp;&amp; sa[i+1]&lt;=n-le &amp;&amp; rk[sa[i]]==rk[sa[i+1]] &amp;&amp; rk[sa[i]+le]==rk[sa[i+1]+le]))
+                Rk++;
+        }
+        tem[sa[n]]=Rk;
+        for(int i=1;i&lt;=n;i++)
+            rk[i]=tem[i];
+    }
+    for(int i=1;i&lt;=n;i++)
+    if(rk[i]==1)
+        hei[rk[i]]=0;
+    else
+    {
+        int ret=max(0,hei[rk[i-1]]-1);
+        while(sa[rk[i]]+ret&lt;=n &amp;&amp; sa[rk[i]-1]+ret&lt;=n &amp;&amp; a[sa[rk[i]]+ret]==a[sa[rk[i]-1]+ret]) ret++;
+        hei[rk[i]]=ret;
+    }
+    for(int i=1;i&lt;=n;i++)
+        printf(&quot;%d &quot;,sa[i]);
+    puts(&quot;&quot;);
+    for(int i=2;i&lt;=n;i++)
+        printf(&quot;%d &quot;,hei[i]);
+    return 0;
+}
+</code></pre><h3 id="SA转后缀树"><a href="#SA转后缀树" class="headerlink" title="SA转后缀树"></a>SA转后缀树</h3><blockquote>
+<p>震惊！我写的第一道后缀树居然是从SA转的</p>
+</blockquote>
+<p>看起来无卵用的SA转后缀树</p>
+<pre><code>    //接上文sa
+    int now;
+    addedge(1,now=N=2,sa[1],n);
+    dp[now]++;
+    int dep=n-sa[1]+1;
+    for(int i=2;i&lt;=n;i++)
+    {
+        int nq=++N;
+        while(dep&gt;hei[i])
+        {
+            dep-=dis[now];
+            now=fa[now];
+        }
+        if(dep&lt;hei[i])
+        {
+            int np=++N;
+            int l1=sa[i-1]+dep,tar=c[now][a[l1]],r1=sa[i-1]+hei[i]-1,l2=sa[i-1]+hei[i],r2=sa[i-1]+dep+dis[tar]-1;
+            //这一段代码还是要撕烤的。。。一开始还写错了
+            //关键是想清楚这一段东西是在Suffix(sa[i-1])里的，要在里面截取一段
+            addedge(now,np,l1,r1);
+            addedge(np,tar,l2,r2);
+            dep=hei[i];
+            now=np;
+        }
+        addedge(now,nq,sa[i]+hei[i],n);
+        now=nq;dep+=dis[now];dp[now]++;
+    }
+    dfs(1);
+</code></pre><h3 id="SAM"><a href="#SAM" class="headerlink" title="SAM"></a>SAM</h3><p>学习了一下后缀自动机，感觉就这个extend是关键<br>这里要注意的是fa（后缀连接）指向的是【最长的，Right集合和自己不同的，自己的后缀】<br>在字符串的末尾加一个字符显然出现了新的Right集合，所以新加一个点，并在上一个最终节点的parent链上找爸爸<br>（十分类似AC自动机的跳fail？）一路找上去直到有相同的转移边，就找到了爸爸（否则爸爸是空节点1）<br>然而他的爸爸可能在所在的parent链中被隐藏了，所以可能需要新建出来，然后复制他原来儿子（如果被隐藏，显然只有一个儿子）的转移边，重新确立父子关系，然后回到p那半边去把转移边修一修<br>这里很容易误解的是从parent边的角度看，这里的p和q是属于完全不同的两条路的，并没有什么关系，q的最后一个字母（最上面的祖先）应该是w，因为是从p由w转移边转移而来，而p就不知道了</p>
+<pre><code>int extend(int now,int w)
+{
+    int np=++cnt,p,q,nq;
+    mx[np]=mx[now]+1;
+    for(p=now;p &amp;&amp; !c[p][w];p=fa[p]) c[p][w]=np;
+    if(p)
+        if(mx[q=c[p][w]]==mx[p]+1)
+            fa[np]=q;
+        else
+        {
+            mx[nq=++cnt]=mx[p]+1;
+            memcpy(c[nq],c[q],sizeof c[q]);
+            fa[nq]=fa[q];fa[q]=fa[np]=nq;
+            for(;p &amp;&amp; c[p][w]==q;p=fa[p])
+                c[p][w]=nq;
+        }
+    else
+        fa[np]=1;
+    size[np]=1;
+    return np;
+}
+</code></pre><h3 id="PAM"><a href="#PAM" class="headerlink" title="PAM"></a>PAM</h3><p>那段初始化才是本体！（雾）</p>
+<pre><code>char s[N];
+struct pam
+{
+    int cnt,last;
+    int a[N][26],fa[N],l[N],size[N];
+    pam(){cnt=1;fa[0]=fa[1]=1;l[1]=-1;}
+    void extend(int c,int n)
+    {
+        int p=last;
+        while(s[n-l[p]-1]!=s[n])p=fa[p];
+        if(!a[p][c])
+        {
+            int now=++cnt,k=fa[p];
+            l[now]=l[p]+2;
+            while(s[n-l[k]-1]!=s[n])k=fa[k];
+            fa[now]=a[k][c];a[p][c]=now;
+        }
+        last=a[p][c];
+        size[last]++;
+    }
+    void solve()
+    {
+        for(int i=cnt;i;i--)
+        {
+            size[fa[i]]+=size[i];
+            ans=max(ans,1ll*size[i]*l[i]);
+        }
+    }
+} pam;
+</code></pre><h1 id="线性基"><a href="#线性基" class="headerlink" title="线性基"></a>线性基</h1><p>秘技：满足从高到低贪心的线性基！<br>其实就是每次插入以后高斯消元一样的消一下<br>可以用来做第k大异或和<br>zero用来判断能不能异或出0<br>统计第k大异或和的时候<br>把有数的位拉出来，把k转成二进制把其中的1对应的东西异或起来就好了</p>
+<pre><code>void add(long long x)
+{
+    for(int i=50;i&gt;=0;i--)
+    if(x&gt;&gt;i&amp;1)
+    if(a[i])
+        x^=a[i];
+    else
+    {
+        for(int j=i-1;j&gt;=0;j--)
+            if(x&gt;&gt;j&amp;1)
+                x^=a[j];
+        for(int j=50;j&gt;i;j--)
+            if(a[j]&gt;&gt;i&amp;1)
+                a[j]^=x;
+        a[i]=x;
+        return;
+    }
+    zero=1;
+}
+</code></pre><h1 id="三维偏序cdq"><a href="#三维偏序cdq" class="headerlink" title="三维偏序cdq"></a>三维偏序cdq</h1><p>三维偏序思路很简单，排序+cdq+树状数组<br>感觉自己码力不行啊，乱用各种ijk导致自己很容易敲错</p>
+<pre><code>void solve(int l,int r)
+{
+    if(l==r) return;
+    solve(l,mid);solve(mid+1,r);
+    int poi=l,i,j;
+    for(i=l,j=mid+1;j&lt;=r;tem[poi++]=a[j++])
+    {
+        while(i&lt;=mid &amp;&amp; a[i].y&lt;=a[j].y)
+        {
+            add(a[i].z,1);
+            tem[poi++]=a[i++];
+        }
+        a[j].ret+=que(a[j].z);
+    }
+    int temi=i;
+    for(;i&lt;=mid;i++)
+        tem[poi++]=a[i];
+    for(int k=l;k&lt;temi;k++)//一开始打了i就挂了
+        add(a[k].z,-1);
+    for(int k=l;k&lt;=r;k++)
+        a[k]=tem[k];
+}
+</code></pre><h1 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h1><p>感觉网上某些模板的1和-1是反的？<br>update：现在发现fft的公式里有个负号，保证他顺时针转，可能我才是反的<br>不过反正正反都是对的，而且只是数组顺序的问题，也没什么关系<br>（只是给我手推带来一点麻烦）<br>（递归版）</p>
+<pre><code>void dft(comp* a,int len,int t)
+{
+    if(len==1) return;
+    comp a0[len&gt;&gt;1],a1[len&gt;&gt;1];
+    for(int i=0;i&lt;len&gt;&gt;1;i++)
+        a0[i]=a[i*2],a1[i]=a[i*2+1];
+    dft(a0,len&gt;&gt;1,t);dft(a1,len&gt;&gt;1,t);
+    comp w(1,0),del(cos(2*PI/len),t*sin(2*PI/len));
+    for(int i=0;i&lt;len&gt;&gt;1;i++)
+    {
+        a[i]=w*a1[i]+a0[i];
+        a[i+(len&gt;&gt;1)]=a0[i]-w*a1[i];
+        w=w*del;
+    }
+}
+</code></pre><p>下面是全家桶<br>ntt用的是lyx的非递归（自己的注释掉了），详见uoj182</p>
+<pre><code>int mi(int x,int y)
+{
+    int ret=1;
+    for(;y;x=1ll*x*x%MOD,y&gt;&gt;=1)
+    if(y&amp;1) ret=1ll*ret*x%MOD;
+    return ret;
+}
+int lgn_,n_,rev_[N],omg_[N];
+void FFT_init(int n){
+    lgn_=32-clz(n-1);n_=1&lt;&lt;lgn_;
+    rev_[0]=0;omg_[0]=1;
+    long long d=mi(gg,119&lt;&lt;23-lgn_);
+    for(int i=1;i&lt;n_;i++){
+        omg_[i]=omg_[i-1]*d%MOD;
+        rev_[i]=rev_[i/2]&gt;&gt;1|(i&amp;1)&lt;&lt;lgn_-1;
+    }
+}
+long long ww[N];
+void FFT(int*a,int flag){
+    for(int i=0;i&lt;n_;i++)if(rev_[i]&lt;i)swap(a[i],a[rev_[i]]);
+    register int s,t;
+    for(int i=0;i&lt;lgn_;i++){
+        t=1&lt;&lt;i;
+        for(register int j=0;j&lt;1&lt;&lt;i;++j)ww[j]=omg_[j&lt;&lt;lgn_-i-1];
+        for(register int j=0;j&lt;n_;j+=t&lt;&lt;1){
+            register int*at=a+j,*bt=a+j+t;
+            for(register int k=0;k&lt;t;++k){
+                s=ww[k]*bt[k]%MOD;
+                bt[k]=at[k]-s&lt;0?at[k]-s+MOD:at[k]-s;
+                at[k]=at[k]+s&gt;=MOD?at[k]+=s-MOD:at[k]+=s;
+            }
+        }
+    }
+    if(flag)
+    {
+        for(int i=1;i&lt;n_-i;i++)swap(a[i],a[n_-i]);
+        long long iv=mi(n_,MOD-2);
+    }
+
+}
+void dft(int* a,int len,bool inv)
+{
+    FFT_init(len);
+    FFT(a,inv);
+}
+/* 
+void dft(int* a,int len,bool inv)
+{
+    if(len==1)
+        return;
+    int p[len/2],q[len/2];
+    for(int i=0;i&lt;len/2;i++)
+        p[i]=a[i*2],
+        q[i]=a[i*2+1];
+    dft(p,len/2,inv);dft(q,len/2,inv);
+    int w=mi(gg,(MOD-1)/len),wn=1;
+    if(inv) w=mi(w,MOD-2);
+    for(int i=0;i&lt;len/2;i++,wn=1ll*wn*w%MOD)
+    {
+        a[i]=p[i]+1ll*wn*q[i]%MOD;
+        if(a[i]&gt;=MOD) a[i]-=MOD;
+        a[i+len/2]=p[i]-1ll*wn*q[i]%MOD;
+        if(a[i+len/2]&lt;0) a[i+len/2]+=MOD;
+    }
+}*/
+void fft(int* a,int* b,int len)
+{
+    dft(a,len,0);dft(b,len,0);
+    for(int i=0;i&lt;len;i++)
+        a[i]=1ll*a[i]*b[i]%MOD;
+    dft(a,len,1);
+    for(int i=0;i&lt;len;i++)
+        a[i]=1ll*a[i]*inv[len]%MOD;
+}
+void build(int l,int r,int* f)
+//T(n)=O(nlogn)+2*T(n/2)=O(nlog^2n)
+{
+    if(l==r)
+    {
+        f[0]=a[l];
+        f[1]=1;
+        return;
+    }
+    int le=1;
+    while(le&lt;=r-l+2) le&lt;&lt;=1;
+    int p[le],q[le];
+    build(l,mid,p);build(mid+1,r,q);
+    memset(p+mid-l+2,0,si*(le-(mid-l+2)));
+    memset(q+r-mid+1,0,si*(le-(r-mid+1)));
+    fft(p,q,le);
+    memcpy(f,p,si*(r-l+2));
+}
+void getpoly(int now,int l,int r)
+//T(n)=O(nlog^2n)
+{
+    if(l==r)
+    {
+        poly[st[now]=++cnt]=MOD-e[l];
+        poly[++cnt]=1;
+        return;
+    }
+    int le=1;
+    while(le&lt;=r-l+2) le&lt;&lt;=1;
+    int p[le],q[le];
+    getpoly(now&lt;&lt;1,l,mid);getpoly(now&lt;&lt;1|1,mid+1,r);
+    memcpy(p,poly+st[now&lt;&lt;1],si*(mid-l+2));
+    memcpy(q,poly+st[now&lt;&lt;1|1],si*(r-mid+1));
+    memset(p+mid-l+2,0,si*(le-(mid-l+2)));
+    memset(q+r-mid+1,0,si*(le-(r-mid+1)));
+    fft(p,q,le);
+    memcpy(poly+(st[now]=++cnt),p,si*(r-l+2));
+    cnt+=r-l+1;
+}
+void rev(int* a,int len)
+//T(n)=O(nlogn)+T(n/2)=O(nlogn)
+{
+    if(len==1)
+    {
+        a[0]=mi(a[0],MOD-2);
+        return;
+    }
+    int h=len/2,d=len*2;
+    int p[d],q[d];
+    memcpy(p,a,si*h);
+    memset(p+h,0,si*(h+len));
+    memcpy(q,a,si*len);
+    memset(q+len,0,si*len);
+    rev(p,h);
+    dft(p,d,0);dft(q,d,0);
+    for(int i=0;i&lt;d;i++)
+        p[i]=((MOD-1ll)*p[i]%MOD*q[i]%MOD+2)*p[i]%MOD;
+    dft(p,d,1);
+    for(int i=0;i&lt;d;i++)
+        p[i]=1ll*p[i]*inv[d]%MOD;
+    memcpy(a,p,si*len);
+}
+void R(int* a,int len)
+{
+    for(int i=0;i&lt;len&gt;&gt;1;i++)
+        swap(a[i],a[len-1-i]);
+}
+void div(int* p,int l1,int* q,int l2)//l1&gt;=l2
+//T(n,m)=O(nlogn)
+{
+    int nmi=1,divdeg=l1-l2+1;
+    while(nmi&lt;max(divdeg*2,l1)) nmi&lt;&lt;=1;
+    int x[nmi],y[nmi];
+    memcpy(x,p,si*l1);memcpy(y,q,si*l2);
+    memset(x+l1,0,si*(nmi-l1));
+    memset(y+l2,0,si*(nmi-l2));
+    R(x,l1);R(y,l2);
+    rev(y,nmi);
+    memset(x+divdeg,0,si*(nmi-divdeg));
+    memset(y+divdeg,0,si*(nmi-divdeg));
+    fft(x,y,nmi);
+    memcpy(p,x,si*divdeg);
+    R(p,divdeg);memset(p+divdeg,0,si*(l1-divdeg));
+}
+void mod(int* p,int l1,int* q,int l2)
+//T(n,m)=O(nlogn)
+{
+    if(l1&lt;l2) return;
+    int alllen=1;
+    while(alllen&lt;l1) alllen&lt;&lt;=1;
+    int x[alllen],y[alllen];
+    memcpy(x,p,si*l1);memcpy(y,q,si*l2);
+    memset(x+l1,0,si*(alllen-l1));
+    memset(y+l2,0,si*(alllen-l2));
+    div(x,l1,y,l2);
+    fft(x,y,alllen);
+    for(int i=0;i&lt;l1;i++)
+         p[i]=(p[i]-x[i]+MOD)%MOD;
+}
+void getval(int now,int l,int r,int* f,int len)
+//T(n,m)=2*T(n/2,n)+O(mlogm)
+//T(1,m)=O(m)
+{
+    int le=r-l+2;
+    int p[le],q[len];
+    memcpy(p,poly+st[now],si*le);
+    mod(f,len,p,le);
+    if(l==r)
+    {
+        ret[l]=f[0];
+        return;
+    }
+    memcpy(q,f,si*len);
+    getval(now&lt;&lt;1,l,mid,f,le);
+    memcpy(f,q,si*len);
+    getval(now&lt;&lt;1|1,mid+1,r,f,le);
+}
+</code></pre>
+            
+        </div>
+    
+</div>
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    <span id="/templates/" class="leancloud-views_num" data-flag-title="各种板子">
+     &nbsp;浏览量
+</span>
+
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    <div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjk0My85NTA0">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/uoj/uoj213/" id="post_nav-newer" class="prev-content" style="color: white">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/SCOI/[SCOI2016]幸运数字/" id="post_nav-older" class="next-content" style="color: white">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>
+    AV.initialize('tRalp8ymC7dJ4uwbiYqtftYQ-gzGzoHsz', 'RxvimXMu1x19EMqnMwQcH8HQ');
+</script>
+<script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    menuSettings: {
+      zoom: "None"
+    },
+    showMathMenu: false,
+    jax: ["input/TeX","output/CommonHTML"],
+    extensions: ["tex2jax.js"],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [["\\(", "\\)"]],
+      displayMath: [["\\[", "\\]"]]
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script>
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+        </body>
+    
+</html>
