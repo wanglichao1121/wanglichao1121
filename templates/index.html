@@ -223,7 +223,7 @@
 
     
         <meta property="article:published_time" content="Thu Jan 18 2018 07:46:16 GMT+0800">
-        <meta property="article:modified_time" content="Wed Mar 07 2018 08:00:56 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 13 2018 20:54:28 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,7 +246,7 @@
     "mainEntityOfPage": "https://wanglichao1121.coding.me/templates/index.html",
     "headline": "各种板子",
     "datePublished": "Thu Jan 18 2018 07:46:16 GMT+0800",
-    "dateModified": "Wed Mar 07 2018 08:00:56 GMT+0800",
+    "dateModified": "Tue Mar 13 2018 20:54:28 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "wanglichao1121",
@@ -869,6 +869,74 @@ void getval(int now,int l,int r,int* f,int len)
     getval(now&lt;&lt;1,l,mid,f,le);
     memcpy(f,q,si*len);
     getval(now&lt;&lt;1|1,mid+1,r,f,le);
+}
+</code></pre><h1 id="仙人掌"><a href="#仙人掌" class="headerlink" title="仙人掌"></a>仙人掌</h1><h2 id="随机仙人掌生成器"><a href="#随机仙人掌生成器" class="headerlink" title="随机仙人掌生成器"></a>随机仙人掌生成器</h2><p>先随个树，作为圆方树<br>然后取非叶子节点组成独立集作为方点</p>
+<pre><code>#include &lt;bits/stdc++.h&gt;
+#define N 200001
+using namespace std;
+int ok[N],fir[N],las[N],fa[N],a[N],CNT;
+map&lt;int,int&gt; mp;
+int rd(int x)
+{
+    return rand()%x+1;
+}
+void link(int x,int y)
+{
+    printf(&quot;%d %d\n&quot;,mp.count(x)?mp[x]:mp[x]=++CNT,mp.count(y)?mp[y]:mp[y]=++CNT);
+}
+int main()
+{
+    srand(time(0)+(unsigned long long)(new char));
+    int n=100000;
+    for(int i=2;i&lt;=n;i++)
+        ok[fa[i]=max(1,rd(5)+i-6)]=1;
+    int cnt=0;
+    for(int i=1;i&lt;=n;i++)
+        if(ok[i]) a[++cnt]=i;
+    random_shuffle(a+1,a+cnt+1);
+    memset(ok,0,sizeof ok);
+    int an=n;
+    for(int i=1;i&lt;=cnt;i++)
+    if(!ok[a[i]] &amp;&amp; !ok[fa[a[i]]])
+        ok[a[i]]=2,ok[fa[a[i]]]=1,an--;
+    printf(&quot;%d %d\n&quot;,an,n-1);
+    mp.clear();
+    for(int i=2;i&lt;=n;i++)
+    {
+        if(ok[i]!=2 &amp;&amp; ok[fa[i]]!=2)
+            link(i,fa[i]);
+        if(ok[fa[i]]==2)
+        {
+            if(!fir[fa[i]]) fir[fa[i]]=las[fa[i]]=i;
+            else link(las[fa[i]],i),las[fa[i]]=i;
+        }
+    }
+    for(int i=1;i&lt;=n;i++)
+    if(ok[i]==2)
+        if(i==1) link(fir[i],las[i]);
+        else link(fir[i],fa[i]),link(fa[i],las[i]);
+    return 0;
+}
+</code></pre><h2 id="建圆方树"><a href="#建圆方树" class="headerlink" title="建圆方树"></a>建圆方树</h2><pre><code>void build(int now,int from,int fat)
+{
+    dep[now]=dep[fat]+1;fa[now]=fat;
+    for(int i=fir[now];i;i=nex[i])
+    if(i!=from)
+    {
+        if(!dep[to[i]])
+            build(to[i],i^1,now);
+        else
+        if(dep[to[i]]&lt;dep[now])
+        {
+            orz[++NODE]=1;
+            Add(to[i],NODE);Add(NODE,to[i]);
+            int numb=0;
+            for(int j=now;j!=to[i];j=fa[j])
+                erzi[j]=1,Add(j,NODE),Add(NODE,j),orz[NODE]++,sonid[j]=++numb;
+        }
+    }
+    if(!erzi[now] &amp;&amp; now&gt;1)
+        Add(now,fat),Add(fat,now);
 }
 </code></pre>
             
